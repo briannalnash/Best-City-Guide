@@ -15,6 +15,21 @@ a {
 	text-decoration: none;
 }
 
+h2,
+h3,
+a {
+	color: #093a58;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
 /*  ========================
     Base Layout Styles
 ============================ */
@@ -22,7 +37,12 @@ a {
 /* ---- Navigation ---- */
 
 .name {
-  margin: 0;
+	font-size: 1.25em;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: #3a3a3a;
 }
 
 .name,
@@ -49,6 +69,7 @@ a {
 .main-header {
 	padding: 1.5em 0;
   background: #3acec2;
+	margin-bottom: 30px;
 }
 
 .main-footer {
@@ -60,6 +81,12 @@ a {
 .name a,
 .main-nav a {
 	padding: 10px 15px;
+	display: block;
+
+}
+
+.main-nav a:hover {
+	color: #3a3a3a;
 }
 
 /*  ========================
@@ -71,18 +98,28 @@ a {
 		min-height: calc(100vh - 89px);
 	}
 	.container {
-		width: 70%;
-		max-width: 1000px;
+		width: 80%;
+		max-width: 1150px;
 		margin: 0 auto;
 	}
 	.name,
 	.main-nav,
 	.main-nav li {
-		display: inline;
+		display: inline-block;
 	}
 	.name {
 		width: 240px;
-		margin: 50px 0;
 		margin-right: 50px;
+	}
+	.main-nav li {
+		margin-right: 12px;
+	}
+	.col {
+		display: inline-block;
+		width: 50%;
+		margin-right: -5px;
+		vertical-align: top;
+		padding-left: 1em;
+		padding-right: 1em;
 	}
 }
